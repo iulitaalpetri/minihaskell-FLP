@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: isocline-1.0.9@sha256:0127f3051694b0c55fad87debdfa590fe4184faebe1e0fe1e552c9bebfba2bc6,2419
+    pantry-tree:
+      sha256: 6516783ba24687efeeebb2c32efc9138bb0d8c4d3faa42c69770805cb121959b
+      size: 2061
+  original:
+    hackage: isocline-1.0.9
 snapshots:
 - completed:
     sha256: 9fa4bece7acfac1fc7930c5d6e24606004b09e80aa0e52e9f68b148201008db9

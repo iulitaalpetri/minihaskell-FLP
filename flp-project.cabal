@@ -25,7 +25,18 @@ source-repository head
 
 library
   exposed-modules:
+      BoolClass
+      Exp
+      Lab2
       Lib
+      Main
+      MaybeClass
+      MyPrelude
+      PairClass
+      Parsing
+      Printing
+      REPLCommand
+      Sugar
   other-modules:
       Paths_flp_project
   hs-source-dirs:
@@ -33,18 +44,31 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , parsec
   default-language: Haskell2010
 
 executable flp-project-exe
   main-is: Main.hs
   other-modules:
+      BoolClass
+      Exp
+      Lab2
+      Lib
+      MaybeClass
+      MyPrelude
+      PairClass
+      Parsing
+      Printing
+      REPLCommand
+      Sugar
       Paths_flp_project
   hs-source-dirs:
-      app
+      src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
     , flp-project
+    , parsec
   default-language: Haskell2010
 
 test-suite flp-project-test
@@ -58,4 +82,5 @@ test-suite flp-project-test
   build-depends:
       base >=4.7 && <5
     , flp-project
+    , parsec
   default-language: Haskell2010
